@@ -13,6 +13,7 @@ theme.bg_normal     = "#2f343f"  -- window.inactive.title.bg.color
 
 -- {{{ colors from https://github.com/NicoHood/arc-theme/blob/master/common/gtk-2.0/gtkrc-dark
 theme.fg_normal     = "#d3dae3"  -- fg_color
+theme.tooltip_bg    = "#4B5162"  -- tooltip_bg_color
 
 -- a little non-arc-way, but I prefer the focused window to be more distinguishable
 theme.bg_focus      = "#5294e2"  -- selected_bg_color
@@ -25,6 +26,14 @@ theme.fg_minimize   = "#7c818c"  -- insensitive_fg_color
 -- {{{ colors from https://github.com/DaveDavenport/rofi-themes/blob/master/Official%20Themes/Arc-Dark.rasi
 theme.bg_urgent     = "#a54242"  -- selected-urgent-background
 theme.fg_urgent     = "#f9f9f9"  -- selected-urgent-foreground
+-- }}}
+
+--- {{ https://github.com/NicoHood/arc-theme/blob/master/common/gtk-2.0/main.rc
+theme.tooltip_shape = function(cr, width, height)
+    gears.shape.rounded_rect(cr, width, height, 2)  -- GtkWidget::tooltip-radius
+end
+theme.tooltip_opacity = 235  -- GtkWidget::tooltip-alpha
+theme.tooltip_border_width = 0  -- default-border
 -- }}}
 
 -- to match with the rest of colorscheme
