@@ -46,6 +46,11 @@ theme.border_marked = theme.bg_urgent  -- TODO: check when/where is it used
 theme.snap_bg = theme.border_focus
 theme.snap_shape = gears.shape.rectangle 
 
+-- {{{ https://github.com/NicoHood/arc-theme/blob/master/README.md
+-- Wallpaper from the Full Preview, https://pixabay.com/photo-869593/
+theme.wallpaper = themes_path.."arc-dark/background.jpg"
+-- }}}
+
 -- Generate Awesome icon:
 theme.awesome_icon = theme_assets.awesome_icon(
     theme.menu_height, theme.bg_focus, theme.fg_focus
